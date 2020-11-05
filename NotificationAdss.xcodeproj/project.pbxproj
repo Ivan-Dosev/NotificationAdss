@@ -13,6 +13,13 @@
 		CC61F97E252D163200FCB4F4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC61F97D252D163200FCB4F4 /* Preview Assets.xcassets */; };
 		CC61F989252D163200FCB4F4 /* NotificationAdssTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC61F988252D163200FCB4F4 /* NotificationAdssTests.swift */; };
 		CC61F994252D163200FCB4F4 /* NotificationAdssUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC61F993252D163200FCB4F4 /* NotificationAdssUITests.swift */; };
+		CC61F9A5252D18A700FCB4F4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC61F9A4252D18A700FCB4F4 /* AppDelegate.swift */; };
+		CC61F9AA252D191D00FCB4F4 /* GoogleMobileAdsSdkiOS-7.66.0 in Resources */ = {isa = PBXBuildFile; fileRef = CC61F9A9252D191D00FCB4F4 /* GoogleMobileAdsSdkiOS-7.66.0 */; };
+		CC61F9AF252D192D00FCB4F4 /* PopupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC61F9AE252D192D00FCB4F4 /* PopupView.swift */; };
+		CC61F9B5252D194200FCB4F4 /* GoogleAppMeasurement.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC61F9B4252D194200FCB4F4 /* GoogleAppMeasurement.framework */; };
+		CC61F9BA252D194400FCB4F4 /* GoogleMobileAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC61F9B9252D194400FCB4F4 /* GoogleMobileAds.framework */; };
+		CC61F9BC252D194600FCB4F4 /* UserMessagingPlatform.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC61F9BB252D194600FCB4F4 /* UserMessagingPlatform.framework */; };
+		CC61F9C1252D1BB100FCB4F4 /* COORDINATOR.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC61F9C0252D1BB100FCB4F4 /* COORDINATOR.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +52,13 @@
 		CC61F98F252D163200FCB4F4 /* NotificationAdssUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NotificationAdssUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC61F993252D163200FCB4F4 /* NotificationAdssUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationAdssUITests.swift; sourceTree = "<group>"; };
 		CC61F995252D163200FCB4F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CC61F9A4252D18A700FCB4F4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CC61F9A9252D191D00FCB4F4 /* GoogleMobileAdsSdkiOS-7.66.0 */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "GoogleMobileAdsSdkiOS-7.66.0"; sourceTree = "<group>"; };
+		CC61F9AE252D192D00FCB4F4 /* PopupView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopupView.swift; sourceTree = "<group>"; };
+		CC61F9B4252D194200FCB4F4 /* GoogleAppMeasurement.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleAppMeasurement.framework; path = "NotificationAdss/GoogleMobileAdsSdkiOS-7.66.0/GoogleAppMeasurement.framework"; sourceTree = "<group>"; };
+		CC61F9B9252D194400FCB4F4 /* GoogleMobileAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMobileAds.framework; path = "NotificationAdss/GoogleMobileAdsSdkiOS-7.66.0/GoogleMobileAds.framework"; sourceTree = "<group>"; };
+		CC61F9BB252D194600FCB4F4 /* UserMessagingPlatform.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserMessagingPlatform.framework; path = "NotificationAdss/GoogleMobileAdsSdkiOS-7.66.0/UserMessagingPlatform.framework"; sourceTree = "<group>"; };
+		CC61F9C0252D1BB100FCB4F4 /* COORDINATOR.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = COORDINATOR.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +66,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC61F9BA252D194400FCB4F4 /* GoogleMobileAds.framework in Frameworks */,
+				CC61F9BC252D194600FCB4F4 /* UserMessagingPlatform.framework in Frameworks */,
+				CC61F9B5252D194200FCB4F4 /* GoogleAppMeasurement.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,6 +96,7 @@
 				CC61F987252D163200FCB4F4 /* NotificationAdssTests */,
 				CC61F992252D163200FCB4F4 /* NotificationAdssUITests */,
 				CC61F974252D163100FCB4F4 /* Products */,
+				CC61F9B3252D194200FCB4F4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -96,9 +114,13 @@
 			isa = PBXGroup;
 			children = (
 				CC61F976252D163100FCB4F4 /* NotificationAdssApp.swift */,
+				CC61F9A4252D18A700FCB4F4 /* AppDelegate.swift */,
 				CC61F978252D163100FCB4F4 /* ContentView.swift */,
+				CC61F9AE252D192D00FCB4F4 /* PopupView.swift */,
+				CC61F9C0252D1BB100FCB4F4 /* COORDINATOR.swift */,
 				CC61F97A252D163200FCB4F4 /* Assets.xcassets */,
 				CC61F97F252D163200FCB4F4 /* Info.plist */,
+				CC61F9A9252D191D00FCB4F4 /* GoogleMobileAdsSdkiOS-7.66.0 */,
 				CC61F97C252D163200FCB4F4 /* Preview Content */,
 			);
 			path = NotificationAdss;
@@ -128,6 +150,16 @@
 				CC61F995252D163200FCB4F4 /* Info.plist */,
 			);
 			path = NotificationAdssUITests;
+			sourceTree = "<group>";
+		};
+		CC61F9B3252D194200FCB4F4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CC61F9B4252D194200FCB4F4 /* GoogleAppMeasurement.framework */,
+				CC61F9B9252D194400FCB4F4 /* GoogleMobileAds.framework */,
+				CC61F9BB252D194600FCB4F4 /* UserMessagingPlatform.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -234,6 +266,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CC61F97E252D163200FCB4F4 /* Preview Assets.xcassets in Resources */,
+				CC61F9AA252D191D00FCB4F4 /* GoogleMobileAdsSdkiOS-7.66.0 in Resources */,
 				CC61F97B252D163200FCB4F4 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -259,6 +292,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC61F9C1252D1BB100FCB4F4 /* COORDINATOR.swift in Sources */,
+				CC61F9A5252D18A700FCB4F4 /* AppDelegate.swift in Sources */,
+				CC61F9AF252D192D00FCB4F4 /* PopupView.swift in Sources */,
 				CC61F979252D163100FCB4F4 /* ContentView.swift in Sources */,
 				CC61F977252D163100FCB4F4 /* NotificationAdssApp.swift in Sources */,
 			);
@@ -421,6 +457,10 @@
 				DEVELOPMENT_ASSET_PATHS = "\"NotificationAdss/Preview Content\"";
 				DEVELOPMENT_TEAM = 2FYTR3E5Q9;
 				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/NotificationAdss/GoogleMobileAdsSdkiOS-7.66.0",
+				);
 				INFOPLIST_FILE = NotificationAdss/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -443,6 +483,10 @@
 				DEVELOPMENT_ASSET_PATHS = "\"NotificationAdss/Preview Content\"";
 				DEVELOPMENT_TEAM = 2FYTR3E5Q9;
 				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/NotificationAdss/GoogleMobileAdsSdkiOS-7.66.0",
+				);
 				INFOPLIST_FILE = NotificationAdss/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
